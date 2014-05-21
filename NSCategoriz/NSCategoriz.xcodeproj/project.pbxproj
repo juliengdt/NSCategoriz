@@ -21,6 +21,8 @@
 		ADE83E30192CAB55006FB697 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADE83E12192CAB55006FB697 /* UIKit.framework */; };
 		ADE83E38192CAB55006FB697 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ADE83E36192CAB55006FB697 /* InfoPlist.strings */; };
 		ADE83E3A192CAB55006FB697 /* NSCategorizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE83E39192CAB55006FB697 /* NSCategorizTests.m */; };
+		ADE83E4B192CCA1C006FB697 /* NSString+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE83E4A192CCA1C006FB697 /* NSString+Formatter.m */; };
+		ADE83E4E192CCB8F006FB697 /* NSString+Tester.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE83E4D192CCB8F006FB697 /* NSString+Tester.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		ADE83E35192CAB55006FB697 /* NSCategorizTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NSCategorizTests-Info.plist"; sourceTree = "<group>"; };
 		ADE83E37192CAB55006FB697 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		ADE83E39192CAB55006FB697 /* NSCategorizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSCategorizTests.m; sourceTree = "<group>"; };
+		ADE83E49192CCA1C006FB697 /* NSString+Formatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Formatter.h"; sourceTree = "<group>"; };
+		ADE83E4A192CCA1C006FB697 /* NSString+Formatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Formatter.m"; sourceTree = "<group>"; };
+		ADE83E4C192CCB8F006FB697 /* NSString+Tester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Tester.h"; sourceTree = "<group>"; };
+		ADE83E4D192CCB8F006FB697 /* NSString+Tester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Tester.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,8 +170,20 @@
 		ADE83E44192CAB98006FB697 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				ADE83E48192CC7BC006FB697 /* NSString */,
 			);
 			name = Categories;
+			sourceTree = "<group>";
+		};
+		ADE83E48192CC7BC006FB697 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				ADE83E49192CCA1C006FB697 /* NSString+Formatter.h */,
+				ADE83E4A192CCA1C006FB697 /* NSString+Formatter.m */,
+				ADE83E4C192CCB8F006FB697 /* NSString+Tester.h */,
+				ADE83E4D192CCB8F006FB697 /* NSString+Tester.m */,
+			);
+			name = NSString;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,8 +283,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE83E4E192CCB8F006FB697 /* NSString+Tester.m in Sources */,
 				ADE83E25192CAB55006FB697 /* ViewController.m in Sources */,
 				ADE83E1F192CAB55006FB697 /* AppDelegate.m in Sources */,
+				ADE83E4B192CCA1C006FB697 /* NSString+Formatter.m in Sources */,
 				ADE83E1B192CAB55006FB697 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
